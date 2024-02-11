@@ -1,0 +1,45 @@
+
+package methods2;
+
+
+public class Methods2 {
+//    static int Gcd(int m, int n)
+//    {
+//      while (m!=n)
+//      {
+//          if(m>n) m=m-n;
+//          else n=n-m;
+//      }
+//      
+//      return m;
+//        
+//    }
+//   
+//    public static void main(String[] args) {
+//        int a=35, b=56;
+//        
+//        System.out.println("The GCD of " +a+ " & " +b+ " is: " +Gcd(a,b));
+//    }
+//    
+    // calling with a help of an object
+    
+     int Gcd(int m, int n)
+    {
+      while (m!=n)
+      {
+          if(m>n) m=m-n;
+          else n=n-m;
+      }
+      
+      return m;
+        
+    }
+   
+    public static void main(String[] args) {
+        int a=35, b=56;
+        Methods2 z=new Methods2();
+        
+        System.out.println("The GCD of " +a+ " & " +b+ " is: " +z.Gcd(a,b));
+    }
+    
+}
