@@ -1,1 +1,47 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package areaofatriangle;
+import java.lang.*;
+import java.util.*;
+
+/**
+ *
+ * @author lenovo
+ */
+public class AreaofaTriangle {
+
+    public static void main(String[] args) {
+       Scanner sc= new Scanner(System.in);
+       
+//       System.out.println("Enter the base: ");
+//       System.out.println("Enter the height: ");
+//       float b=sc.nextFloat();
+//       float h=sc.nextFloat();
+//      
+//       float area= 0.5f*b*h;
+//       System.out.println("the area of the traingle is: " +area);
+
+         System.out.println("Enter the three sides of the trianngle:");
+         int a,b,c;
+         a=sc.nextInt();
+         b=sc.nextInt();
+         c=sc.nextInt();
+         
+         float s=(a+b+c)/2f;
+         
+         float sides=s*(s-a)*(s-b)*(s-c);
+      
+         float area=(float) Math.sqrt(sides);
+         
+         System.out.println("the area of the traingle is :" +area);
+         
+
+
+       
+    }
+    
+}
+
 
