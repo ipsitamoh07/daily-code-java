@@ -1,0 +1,22 @@
+
+package areaoftwoshapes;
+import java.util.*;
+import java.lang.*;
+
+public class AreaofTwoShapes {
+    static double area(double l, double b){
+        return l*b;
+    }
+    
+    static double area(double r){
+        return Math.PI*r*r;
+    }
+    public static void main(String[] args) {
+//       double len=12.34, bd=45.67;
+//       System.out.println(area(len,bd));
+        
+    Scanner scan=new Scanner(System.in);
+    System.out.println("Enter a radius: ");
+    double rad=scan.nextDouble();
+    System.out.println(area(rad));
+    }
